@@ -1,0 +1,2187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Training Institute - Indore</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .cta-button {
+            background: #ff6b6b;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background: #ff5252;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #f0f8ff;
+            color: #333;
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            max-width: 1409px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero-text {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-text .get-course-btn {
+            background: #004aac;
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-bottom: 2rem;
+            display: inline-block;
+        }
+
+        .hero-text .get-course-btn:hover {
+            background: #1565c0;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero-text h1 .highlight {
+            color: #4fc3f7;
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #666;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-btn {
+            background: #004aac;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .hero-btn:hover {
+            background: #1565c0;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(30, 136, 229, 0.3);
+        }
+
+        .hero-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        .hero-illustration {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 50%, #90caf9 100%);
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .hero-illustration:hover {
+            transform: scale(1.02);
+        }
+
+        .cloud {
+            position: absolute;
+            background: white;
+            border-radius: 50px;
+            opacity: 0.8;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .cloud-1 {
+            width: 60px;
+            height: 40px;
+            top: 20%;
+            right: 20%;
+            animation-delay: 0s;
+        }
+
+        .cloud-2 {
+            width: 80px;
+            height: 50px;
+            top: 15%;
+            right: 40%;
+            animation-delay: 1s;
+        }
+
+        .hills {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60%;
+            background: linear-gradient(135deg, #8bc34a 0%, #689f38 100%);
+            border-radius: 50% 50% 0 0;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 0;
+            margin-top: 3rem;
+            border: 2px solid #333;
+            border-radius: 0;
+            background: white;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            text-align: center;
+            border-right: 2px solid #333;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card:last-child {
+            border-right: none;
+        }
+
+        .feature-card:hover {
+            background: #f8f9fa;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .feature-card h3 {
+            font-size: 23px;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .feature-card:hover::before {
+            left: 100%;
+        }
+
+        /* Courses Section */
+        .courses {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .course-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            border: 1px solid #e9ecef;
+        }
+
+        .course-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .course-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            transition: all 0.3s;
+        }
+
+        .course-image:hover {
+            transform: scale(1.05);
+            background: linear-gradient(45deg, #764ba2, #667eea);
+        }
+
+        .course-info {
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem 0;
+            color: #666;
+        }
+
+        .know-more {
+            background: #28a745;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .know-more:hover {
+            background: #218838;
+        }
+
+        /* About Section */
+        .about {
+            padding: 4rem 0;
+            background: #f8f9fa;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #666;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .stat-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+            color: #555;
+        }
+
+        /* Skills Section */
+        .skills {
+            padding: 4rem 0;
+            background: #f8f9fa;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .skill-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        /* Career Options */
+        .career-options {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .career-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .career-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .career-card:hover {
+            border-color: #667eea;
+            transform: translateY(-5px);
+        }
+
+        .career-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: #ff6b6b;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: all 0.3s;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background: #ff5252;
+            transform: translateY(-2px);
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .faq-item {
+            background: #f8f9fa;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            background: #667eea;
+            color: white;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: background 0.3s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question:hover {
+            background: #5a6fd8;
+        }
+
+        .faq-answer {
+            padding: 1.5rem;
+            display: none;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+
+            .hero-buttons {
+                /* flex-direction: column; */
+                align-items: center;
+            }
+
+            .hero-btn {
+                /* width: 100%; */
+                text-align: center;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-card {
+                border-right: none;
+                border-bottom: 2px solid #333;
+            }
+
+            .feature-card:last-child {
+                border-bottom: none;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+
+            .course-grid,
+            .testimonial-grid,
+            .skills-grid,
+            .career-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <section>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .topbar {
+      background: #fff;
+      padding: 10px 20px 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      height: 65px;
+    }
+
+    .right-top {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .social-icons i {
+      background: white;
+      color: #004a80;
+      font-size: 14px;
+      border-radius: 50%;
+      padding: 10px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    .social-icons i:hover {
+      background: #004a80;
+      color: white;
+      transform: scale(1.2);
+    }
+
+    .phone {
+      color: #444;
+      font-size: 15px;
+    }
+
+    .phone i {
+      color: #007bff;
+      margin-right: 5px;
+    }
+
+    .navbar {
+      background: #fff;
+      padding: 0 20px;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      flex-wrap: wrap;
+      border-top: 1px solid #eee;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      font-weight: bold;
+      padding: 10px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .nav-links a {
+      color: #004a80;
+      text-decoration: none;
+      position: relative;
+      transition: 0.3s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #fff;
+      background: #004a80;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      display: none;
+      z-index: 999;
+      min-width: 220px;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 8px 12px;
+      color: #004a80;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+
+    .dropdown-content a:hover {
+      background: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 26px;
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+    }
+
+    .mobile-extras {
+      display: none;
+    }
+
+    @media screen and (max-width: 992px) {
+      .topbar {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .right-top {
+        display: none;
+      }
+
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        margin-top: 10px;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .dropdown-content {
+        position: relative;
+        box-shadow: none;
+        background: #f9f9f9;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      .mobile-extras {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 20px;
+      }
+
+      .mobile-extras.show {
+        display: flex;
+      }
+    }
+
+    @media screen and (min-width: 993px) {
+      .mobile-extras {
+        display: none !important;
+      }
+    }
+  </style>
+
+  <div class="topbar">
+    <!-- Logo -->
+    <img src="https://indoredigitallearning.com/image/indore-dijital-learning-logo-design.png" class="logo" alt="Logo">
+
+    <!-- Social + Phone for Desktop -->
+    <div class="right-top">
+      <div class="social-icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+      <div class="phone">
+        <i class="fas fa-phone-alt"></i> +91 9669906555
+      </div>
+    </div>
+
+    <!-- Hamburger for Mobile -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
+
+  <!-- Navigation -->
+  <div class="navbar">
+    <div class="nav-links" id="navLinks">
+      <a href="home.html" class="active">Home</a>
+      <div class="dropdown">
+        <a href="#" > Courses <i class="fas fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a href="#">ALL Courses</a>
+          <a href="digital.html" >Digital Marketing</a>
+          <a href="#">Graphic Design</a>
+          <a href="#">SEO-Training</a>
+          <a href="#">Web Design & Development</a>
+          <a href="#">SEM Training</a>
+          <a href="#">Social Media Marketing</a>
+          <a href="#">HR Training</a>
+          <a href="#">Video-Editing</a>
+          <a href="#">AI Training in Indore</a>
+          <a href="#">Content Marketing</a>
+        </div>
+      </div>
+      <a href="#">About Us</a>
+      <a href="#">Testimonial</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+    <!-- Mobile social and phone (only visible after toggle) -->
+    <div class="mobile-extras" id="mobileExtras">
+      <div class="social-icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+      <div class="phone">
+        <i class="fas fa-phone-alt"></i> +91 9669906555
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const links = document.getElementById("navLinks");
+      const extras = document.getElementById("mobileExtras");
+      links.classList.toggle("show");
+      extras.classList.toggle("show");
+    }
+  </script>
+
+  <!-- Font Awesome (CDN) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</section>
+
+</head>
+<body>
+    <!-- Header -->
+    <!-- <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Digital Marketing Training</div>
+                <nav>
+                    <ul>
+                        <li><a href="#courses">Explore Courses</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <a href="#enroll" class="cta-button">Get Course Now</a>
+            </div>
+        </div>
+    </header> -->
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <button class="get-course-btn">Get Course Now</button>
+                <h1>Unlock <span class="highlight">Your Potential</span><br>
+                Choose The Best <span class="highlight">Digital Marketing Training</span> Institute<br>
+                In Indore</h1>
+                <p>Welcome to Digital Marketing Training Indore, your premier destination for comprehensive Digital Marketing training and placements in Indore.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#courses" class="hero-btn">Explore Courses</a>
+                    <a href="#contact" class="hero-btn">Contact Us</a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="https://indoredigitallearning.com/image/about2.jpg" alt="image" height="100%" width="100%">
+                <!-- <div class="hero-illustration">
+                    <div class="cloud cloud-1"></div>
+                    <div class="cloud cloud-2"></div>
+                    <div class="hills"></div> -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Rated 4.9★ on<br>Google</h3>
+                </div>
+                <div class="feature-card">
+                    <h3>Taught by Expert<br>Faculty</h3>
+                </div>
+                <div class="feature-card">
+                    <h3>Certification Course</h3>
+                </div>
+                <div class="feature-card">
+                    <h3>100% Internship +<br>Placement Assistance</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- our services -->
+<section id="ourCourses" style="padding: 40px 60px; background: #fff;">
+  <h2 style="font-size: 38px; font-weight: bold; margin-bottom: 30px;">
+    <u><b>Our Courses</b></u>
+  </h2>
+
+  <!-- Slider wrapper -->
+  <div class="slider-wrapper" style="overflow: hidden;">
+    <div class="course-container" style="display: flex; flex-wrap: wrap; gap: 47px; justify-content: center;">
+
+      <!-- 1 -->
+      <div class="course-card fade-in" style="width: 242px; background: #f4f4f4; padding: 20px; border-radius: 20px; text-align: center;">
+        <img src="https://indoredigitallearning.com/image/courses4.jpg.png" style="border-radius: 10px; width: 91%; margin-bottom: 15px;">
+        <h3 style="font-size: 16px; font-weight: bold;">Digital Marketing</h3>
+        <p style="font-size: 14px;">Duration– 3 Month<br>Mode– Offline</p>
+        <button style="margin-top: 10px; padding: 8px 14px; background: #004aad; color: #fff; border: none; border-radius: 6px;">Know More</button>
+      </div>
+
+      <!-- 2 -->
+      <div class="course-card fade-in" style="width: 242px; background: #f4f4f4; padding: 20px; border-radius: 20px; text-align: center;">
+        <img src="https://indoredigitallearning.com/image/courses(4).webp" style="border-radius: 10px; width: 91%; margin-bottom: 15px;">
+        <h3 style="font-size: 16px; font-weight: bold;">Website Design</h3>
+        <p style="font-size: 14px;">Duration– 3 Month<br>Mode– Offline</p>
+        <button style="margin-top: 10px; padding: 8px 14px; background: #004aad; color: #fff; border: none; border-radius: 6px;">Know More</button>
+      </div>
+
+      <!-- 3 -->
+      <div class="course-card fade-in" style="width: 242px; background: #f4f4f4; padding: 20px; border-radius: 20px; text-align: center;">
+        <img src="https://indoredigitallearning.com/image/courses12%20(2).jpg" style="border-radius: 10px; width: 91%; margin-bottom: 15px;">
+        <h3 style="font-size: 16px; font-weight: bold;">SEO/ SEM</h3>
+        <p style="font-size: 14px;">Duration– 3 Month<br>Mode– Offline</p>
+        <button style="margin-top: 10px; padding: 8px 14px; background: #004aad; color: #fff; border: none; border-radius: 6px;">Know More</button>
+      </div>
+
+      <!-- 4 -->
+      <div class="course-card fade-in" style="width: 242px; background: #f4f4f4; padding: 20px; border-radius: 20px; text-align: center;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrbL03QyPcoceOz0XgSJStFTbanxH46Sx2sNoOeP95pWJK5oo2PC15Y7SgdvP3CBHcgMM&usqp=CAU" style="border-radius: 10px; width: 91%; margin-bottom: 15px;">
+        <h3 style="font-size: 16px; font-weight: bold;">Graphic Design</h3>
+        <p style="font-size: 14px;">Duration– 3 Month<br>Mode– Offline</p>
+        <button style="margin-top: 10px; padding: 8px 14px; background: #004aad; color: #fff; border: none; border-radius: 6px;">Know More</button>
+      </div>
+
+      <!-- 5 -->
+      <div class="course-card fade-in" style="width: 242px; background: #f4f4f4; padding: 20px; border-radius: 20px; text-align: center;">
+        <img src="https://indoredigitallearning.com/image/human%20resources.jpg" style="border-radius: 10px; width: 91%; margin-bottom: 15px;">
+        <h3 style="font-size: 16px; font-weight: bold;">HR Training</h3>
+        <p style="font-size: 14px;">Duration– 3 Month<br>Mode– Offline</p>
+        <button style="margin-top: 10px; padding: 8px 14px; background: #004aad; color: #fff; border: none; border-radius: 6px;">Know More</button>
+      </div>
+
+      <!-- 6 -->
+      <div class="course-card fade-in" style="width: 242px; background: #f4f4f4; padding: 20px; border-radius: 20px; text-align: center;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLURB-Y1GR_djicajCENBhx05q5W5Me6hoUmlXXL6K2XOxhyFpYp4QPos1VO1rYVoka0o&usqp=CAU" style="border-radius: 10px; width: 91%; margin-bottom: 15px;">
+        <h3 style="font-size: 16px; font-weight: bold;">Sales Training</h3>
+        <p style="font-size: 14px;">Duration– 3 Month<br>Mode– Offline</p>
+        <button style="margin-top: 10px; padding: 8px 14px; background: #004aad; color: #fff; border: none; border-radius: 6px;">Know More</button>
+      </div>
+
+      <!-- 7 -->
+      <div class="course-card fade-in" style="width: 242px; background: #f4f4f4; padding: 20px; border-radius: 20px; text-align: center;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSca8EmLH7REOmH3IwJhvywitg85ydSe-LgA&s" style="border-radius: 10px; width: 91%; margin-bottom: 15px;">
+        <h3 style="font-size: 16px; font-weight: bold;">UI/ UX Design</h3>
+        <p style="font-size: 14px;">Duration– 3 Month<br>Mode– Offline</p>
+        <button style="margin-top: 10px; padding: 8px 14px; background: #004aad; color: #fff; border: none; border-radius: 6px;">Know More</button>
+      </div>
+
+      <!-- 8 -->
+      <div class="course-card fade-in" style="width: 242px; background: #f4f4f4; padding: 20px; border-radius: 20px; text-align: center;">
+        <img src="https://indoredigitallearning.com/image/Video%20Editing.avif" style="border-radius: 10px; width: 91%; margin-bottom: 15px;">
+        <h3 style="font-size: 16px; font-weight: bold;">Video Editing</h3>
+        <p style="font-size: 14px;">Duration– 3 Month<br>Mode– Offline</p>
+        <button style="margin-top: 10px; padding: 8px 14px; background: #004aad; color: #fff; border: none; border-radius: 6px;">Know More</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Animations + Responsive + Slider -->
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 0.6s forwards;
+    }
+
+    .fade-in:nth-child(1) { animation-delay: 0.2s; }
+    .fade-in:nth-child(2) { animation-delay: 0.4s; }
+    .fade-in:nth-child(3) { animation-delay: 0.6s; }
+    .fade-in:nth-child(4) { animation-delay: 0.8s; }
+    .fade-in:nth-child(5) { animation-delay: 1.0s; }
+    .fade-in:nth-child(6) { animation-delay: 1.2s; }
+    .fade-in:nth-child(7) { animation-delay: 1.4s; }
+    .fade-in:nth-child(8) { animation-delay: 1.6s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      /* .slider-wrapper {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+      } */
+@media screen and (max-width: 768px) {
+  .slider-wrapper {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+
+  .course-container {
+    animation: autoSlide 50s linear infinite; /* Slow slider */
+  }
+}
+
+      .course-container {
+        flex-wrap: nowrap !important;
+        gap: 16px !important;
+        width: max-content;
+        animation: autoSlide 25s linear infinite;
+      }
+
+      .course-card {
+        min-width: 260px !important;
+        scroll-snap-align: start;
+        flex-shrink: 0;
+      }
+
+      @keyframes autoSlide {
+        0%   { transform: translateX(0); }
+        12.5%  { transform: translateX(-260px); }
+        25%  { transform: translateX(-520px); }
+        37.5%  { transform: translateX(-780px); }
+        50%  { transform: translateX(-1040px); }
+        62.5%  { transform: translateX(-1300px); }
+        75%  { transform: translateX(-1560px); }
+        87.5%  { transform: translateX(-1820px); }
+        100% { transform: translateX(0); }
+      }
+    }
+  </style>
+</section>
+
+<!-- ens our services -->
+
+<section>
+
+    <style>
+      
+        
+        .about-container {
+            max-width: 1200px;
+            /* margin: 0 auto; */
+            margin-bottom: 20px;
+    margin-left: 187px;
+    margin-top: 20px;
+        }
+        
+        .about-title {
+            font-size: 38px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+        
+        .about-subtitle {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 40px;
+        }
+        
+        .highlight {
+            color: #5DADE2;
+        }
+        
+        .description {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 50px;
+        }
+        
+        .bottom-section {
+            display: flex;
+            gap: 60px;
+            align-items: flex-start;
+            margin-left: 70px;
+                margin-bottom: 54px;
+        }
+        
+        .image-container {
+            flex: 1;
+        }
+        
+        .featurees-container {
+            flex: 0 0 300px;
+        }
+        
+        .featurees {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .features-box {
+            border: 3px solid #333;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            background-color: white;
+        }
+        
+        .landscape-image {
+            margin-left: 70px;
+            width: 57%;
+            height: 335px;
+            background: linear-gradient(to bottom, #87CEEB 0%, #87CEEB 60%, #9ACD32 60%, #9ACD32 100%);
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cloud {
+            position: absolute;
+            background-color: white;
+            border-radius: 50px;
+        }
+        
+        .cloud1 {
+            width: 80px;
+            height: 40px;
+            top: 40px;
+            left: 50px;
+        }
+        
+        .cloud1::before {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+            top: -25px;
+            left: 10px;
+        }
+        
+        .cloud1::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 40px;
+            background-color: white;
+            border-radius: 50%;
+            top: -15px;
+            right: 10px;
+        }
+        
+        .cloud2 {
+            width: 60px;
+            height: 30px;
+            top: 70px;
+            right: 80px;
+        }
+        
+        .cloud2::before {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 50%;
+            top: -20px;
+            left: 5px;
+        }
+        
+        .cloud2::after {
+            content: '';
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            background-color: white;
+            border-radius: 50%;
+            top: -15px;
+            right: 5px;
+        }
+        
+        .hills {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 120px;
+        }
+        
+        .hill1 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 200px;
+            height: 100px;
+            background-color: #7CB342;
+            border-radius: 100px 100px 0 0;
+        }
+        
+        .hill2 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 180px;
+            height: 80px;
+            background-color: #8BC34A;
+            border-radius: 90px 90px 0 0;
+        }
+    </style>
+<style>
+/* Tablet View (up to 991px) */
+@media screen and (max-width: 991px) {
+  .about-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .bottom-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-left: 0;
+    gap: 30px;
+  }
+
+  .landscape-image {
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+  }
+
+  .landscape-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .featurees-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .featurees {
+    width: 100%;
+    max-width: 500px;
+    padding: 0 10px;
+  }
+
+  .features-box {
+    font-size: 15px;
+    padding: 12px 18px;
+  }
+
+  .about-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .about-subtitle {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 16px;
+    text-align: justify;
+  }
+}
+
+/* Mobile View (up to 600px) */
+@media screen and (max-width: 600px) {
+  .about-container {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .about-title {
+    font-size: 26px;
+  }
+
+  .about-subtitle {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .features-box {
+    font-size: 13px;
+    padding: 10px 14px;
+  }
+
+  .landscape-image {
+    height: auto;
+  }
+
+  .landscape-image img {
+    height: auto;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+}
+</style>
+
+<div style="background-color: #f0f8ff">
+    <div class="about-container">
+        <h1 class="about-title"><b>About Us</b></h1>
+        <h2 class="about-subtitle">Your Gateway to <span class="highlight">Digital Marketing Excellence</span></h2>
+        
+        <div class="description">
+            <p>Indore Digital Learning is a trusted institute offering industry-relevant digital marketing courses in Indore designed to build real skills for real success.</p>
+            
+            <p>Our expert trainers, hands-on projects, and career-focused approach make us a preferred choice for students, freelancers, and entrepreneurs looking to upskill and grow in today's digital-first world.</p>
+            
+            <p>With over 5000+ students trained, we combine practical learning, certifications, and internship opportunities to ensure your digital journey turns into a strong career outcome.</p>
+        </div>
+        
+        <div class="bottom-section">
+            <div class="featurees-container">
+                <div class="featurees">
+                    <div class="features-box">Industry-Focused Training</div>
+                    <div class="features-box">Expert Mentors, Real Guidance</div>
+                    <div class="features-box">Updated & Industry-Relevant Curriculum</div>
+                    <div class="features-box">100% Internship + Placement Assistance</div>
+                </div>
+            </div>
+            
+            <div class="image-container">
+                <div class="landscape-image">
+                    <!-- <div class="cloud cloud1"></div>
+                    <div class="cloud cloud2"></div>
+                    <div class="hills">
+                        <div class="hill1"></div>
+                        <div class="hill2"></div> -->
+                             <img src="images/WhatsApp Image 2025-07-18 at 11.53.37_811ae408.jpg" alt="image" style="height: 100%; width: 100%;">
+           
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+ <!-- start testimonial -->
+<section style="background-color: #fff;">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* body {
+            font-family: 'Arial', sans-serif;
+            background: #f5f5f5;
+        } */
+
+        .testimonial-container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); */
+            overflow: hidden;
+            padding: 40px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 50px;
+            text-decoration: underline;
+            text-decoration-color: #667eea;
+            text-underline-offset: 10px;
+        }
+
+        .slider-wrapper {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+        .slider-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            display: flex;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .testimonial-card {
+            flex: 1;
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            border: 2px solid #e9ecef;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .profile-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .profile-info h3 {
+            font-size: 1.3rem;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .stars {
+            display: flex;
+            gap: 3px;
+            margin-bottom: 10px;
+        }
+
+        .star {
+            color: #ffc107;
+            font-size: 18px;
+        }
+
+        .testimonial-text {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .course-info {
+            border-top: 2px solid #e9ecef;
+            padding-top: 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .course-info strong {
+            color: #333;
+        }
+
+        .navigation-dots {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ccc;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dot.active {
+            background: #667eea;
+            transform: scale(1.2);
+        }
+
+        .dot:hover {
+            background: #764ba2;
+        }
+
+        /* Tablet Styles */
+        @media (max-width: 1024px) {
+            .testimonial-container {
+                max-width: 95%;
+                padding: 30px;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .slide {
+                gap: 20px;
+            }
+            
+            .testimonial-card {
+                padding: 25px;
+            }
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .testimonial-container {
+                max-width: 95%;
+                padding: 20px;
+                margin: 10px;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+                margin-bottom: 30px;
+            }
+            
+            .slide {
+                flex-direction: column;
+                gap: 15px;
+                padding: 10px;
+            }
+            
+            .testimonial-card {
+                padding: 20px;
+                margin-bottom: 10px;
+            }
+            
+            .profile-avatar {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+            
+            .profile-info h3 {
+                font-size: 1.1rem;
+            }
+            
+            .testimonial-text {
+                font-size: 0.9rem;
+                line-height: 1.5;
+            }
+            
+            .course-info {
+                font-size: 0.8rem;
+            }
+            
+            .navigation-dots {
+                margin-top: 20px;
+            }
+        }
+
+        /* Small Mobile Styles */
+        @media (max-width: 480px) {
+            .testimonial-container {
+                max-width: 100%;
+                padding: 15px;
+                margin: 5px;
+                border-radius: 10px;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+                margin-bottom: 25px;
+            }
+            
+            .slide {
+                padding: 5px;
+                gap: 10px;
+            }
+            
+            .testimonial-card {
+                padding: 15px;
+                border-radius: 10px;
+            }
+            
+            .profile-section {
+                gap: 10px;
+                margin-bottom: 15px;
+            }
+            
+            .profile-avatar {
+                width: 45px;
+                height: 45px;
+                font-size: 18px;
+            }
+            
+            .profile-info h3 {
+                font-size: 1rem;
+            }
+            
+            .star {
+                font-size: 16px;
+            }
+            
+            .testimonial-text {
+                font-size: 0.85rem;
+                line-height: 1.4;
+                margin-bottom: 15px;
+            }
+            
+            .course-info {
+                font-size: 0.75rem;
+                padding-top: 10px;
+            }
+            
+            .navigation-dots {
+                gap: 8px;
+            }
+            
+            .dot {
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        /* Extra Small Mobile */
+        @media (max-width: 320px) {
+            .testimonial-container {
+                padding: 10px;
+                margin: 0;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            
+            .testimonial-card {
+                padding: 12px;
+            }
+            
+            .profile-avatar {
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+            }
+            
+            .profile-info h3 {
+                font-size: 0.9rem;
+            }
+            
+            .testimonial-text {
+                font-size: 0.8rem;
+            }
+            
+            .course-info {
+                font-size: 0.7rem;
+            }
+        }
+    </style>
+
+<div >
+    <div class="testimonial-container">
+        <h2 class="section-title">What Our Students Say</h2>
+        
+        <div class="slider-wrapper">
+            <div class="slider-container" id="sliderContainer">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="testimonial-card">
+                        <div class="profile-section">
+                            <div class="profile-avatar">👨</div>
+                            <div class="profile-info">
+                                <h3>Rahul Sharma</h3>
+                                <div class="stars">
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-text">
+                            "I joined Indore Digital Learning to understand digital marketing basics, but I ended up mastering SEO, Google Ads, and content marketing. The trainers are extremely helpful and the live projects gave me real confidence!"
+                        </div>
+                        <div class="course-info">
+                            <strong>Course</strong> - Digital Marketing<br>
+                            <strong>Location</strong> - Indore
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="profile-section">
+                            <div class="profile-avatar">👩</div>
+                            <div class="profile-info">
+                                <h3>Priya Patel</h3>
+                                <div class="stars">
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-text">
+                            "The practical approach and industry-relevant curriculum helped me land a job in just 2 months after completion. Best investment in my career!"
+                        </div>
+                        <div class="course-info">
+                            <strong>Course</strong> - Web Development<br>
+                            <strong>Location</strong> - Indore
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="profile-section">
+                            <div class="profile-avatar">👨</div>
+                            <div class="profile-info">
+                                <h3>Amit Kumar</h3>
+                                <div class="stars">
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-text">
+                            "From zero coding knowledge to building complete websites! The support team is amazing and always ready to help."
+                        </div>
+                        <div class="course-info">
+                            <strong>Course</strong> - Full Stack Development<br>
+                            <strong>Location</strong> - Indore
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="testimonial-card">
+                        <div class="profile-section">
+                            <div class="profile-avatar">👩</div>
+                            <div class="profile-info">
+                                <h3>Sneha Jain</h3>
+                                <div class="stars">
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-text">
+                            "The course content is updated with latest industry trends. I learned Python, Data Analytics and got placed in a top company!"
+                        </div>
+                        <div class="course-info">
+                            <strong>Course</strong> - Data Science<br>
+                            <strong>Location</strong> - Indore
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="profile-section">
+                            <div class="profile-avatar">👨</div>
+                            <div class="profile-info">
+                                <h3>Vishal Gupta</h3>
+                                <div class="stars">
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-text">
+                            "Excellent training quality! The instructors are industry experts and the placement assistance is outstanding."
+                        </div>
+                        <div class="course-info">
+                            <strong>Course</strong> - Java Development<br>
+                            <strong>Location</strong> - Indore
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="profile-section">
+                            <div class="profile-avatar">👩</div>
+                            <div class="profile-info">
+                                <h3>Kavya Singh</h3>
+                                <div class="stars">
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-text">
+                            "Great learning environment! The hands-on projects and mentorship helped me transition from non-tech to tech successfully."
+                        </div>
+                        <div class="course-info">
+                            <strong>Course</strong> - UI/UX Design<br>
+                            <strong>Location</strong> - Indore
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <div class="testimonial-card">
+                        <div class="profile-section">
+                            <div class="profile-avatar">👨</div>
+                            <div class="profile-info">
+                                <h3>Arjun Mehta</h3>
+                                <div class="stars">
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-text">
+                            "The mobile app development course was comprehensive. Now I'm working as a freelancer and earning great income!"
+                        </div>
+                        <div class="course-info">
+                            <strong>Course</strong> - Mobile App Development<br>
+                            <strong>Location</strong> - Indore
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="profile-section">
+                            <div class="profile-avatar">👩</div>
+                            <div class="profile-info">
+                                <h3>Pooja Agarwal</h3>
+                                <div class="stars">
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-text">
+                            "Amazing experience! The cloud computing course gave me the skills I needed to advance in my career. Highly recommended!"
+                        </div>
+                        <div class="course-info">
+                            <strong>Course</strong> - Cloud Computing<br>
+                            <strong>Location</strong> - Indore
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="profile-section">
+                            <div class="profile-avatar">👨</div>
+                            <div class="profile-info">
+                                <h3>Deepak Yadav</h3>
+                                <div class="stars">
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                    <span class="star">⭐</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-text">
+                            "Perfect balance of theory and practical learning. The cybersecurity course opened new career opportunities for me!"
+                        </div>
+                        <div class="course-info">
+                            <strong>Course</strong> - Cybersecurity<br>
+                            <strong>Location</strong> - Indore
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation-dots">
+            <div class="dot active" data-slide="0"></div>
+            <div class="dot" data-slide="1"></div>
+            <div class="dot" data-slide="2"></div>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const totalSlides = 3;
+        const slider = document.getElementById('sliderContainer');
+        const dots = document.querySelectorAll('.dot');
+        let autoSlideInterval;
+
+        function showSlide(index) {
+            slider.style.transform = `translateX(-${index * 100}%)`;
+            
+            // Update active dot
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+            
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextSlide, 4000);
+        }
+
+        function stopAutoSlide() {
+            clearInterval(autoSlideInterval);
+        }
+
+        // Dot navigation
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                showSlide(index);
+                stopAutoSlide();
+                startAutoSlide(); // Restart auto-slide
+            });
+        });
+
+        // Pause auto-slide on hover
+        const container = document.querySelector('.testimonial-container');
+        container.addEventListener('mouseenter', stopAutoSlide);
+        container.addEventListener('mouseleave', startAutoSlide);
+
+        // Handle touch events for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        container.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+            stopAutoSlide();
+        });
+
+        container.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+            startAutoSlide();
+        });
+
+        function handleSwipe() {
+            if (touchEndX < touchStartX - 50) {
+                // Swipe left - next slide
+                nextSlide();
+            }
+            if (touchEndX > touchStartX + 50) {
+                // Swipe right - previous slide
+                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                showSlide(currentSlide);
+            }
+        }
+
+        // Initialize auto-slide
+        startAutoSlide();
+    </script>
+</div>
+</section>
+<!-- aligblity -->
+ <section id="courseForWhom" style="padding: 40px 20px; background: #4fc3f738; border-bottom: 4px solid black;">
+
+  <h2 style="text-align: center; font-size: 38px; font-weight: bold; margin-bottom: 30px;">
+    <b>This Course is Perfect For You If You Are…</b>
+  </h2>
+
+<div class="perfect-for-grid" style="display: flex; flex-wrap: wrap; justify-content: space-around; row-gap: 40px; column-gap: 100px; max-width: 1000px; margin: auto;">
+
+    <!-- 1 -->
+    <div style="display: flex; align-items: center; gap: 12px; width: 360px; border-bottom: 2px solid black; padding-bottom: 6px;">
+      <div style="background: #012f7b; color: white; padding: 12px 16px; font-weight: bold;">01</div>
+      <span style="font-size: 22px;">A Student or Fresher</span>
+    </div>
+
+    <!-- 2 -->
+    <div style="display: flex; align-items: center; gap: 12px; width: 360px; border-bottom: 2px solid black; padding-bottom: 6px;">
+      <div style="background: #012f7b; color: white; padding: 12px 16px; font-weight: bold;">02</div>
+      <span style="font-size: 22px;">A Working Professional</span>
+    </div>
+
+    <!-- 3 -->
+    <div style="display: flex; align-items: center; gap: 12px; width: 360px; border-bottom: 2px solid black; padding-bottom: 6px;">
+      <div style="background:#012f7b; color: white; padding: 12px 16px; font-weight: bold;">03</div>
+      <span style="font-size: 22px;">A Business Owner</span>
+    </div>
+
+    <!-- 4 -->
+    <div style="display: flex; align-items: center; gap: 12px; width: 360px; border-bottom: 2px solid black; padding-bottom: 6px;">
+      <div style="background: #012f7b; color: white; padding: 12px 16px; font-weight: bold;">04</div>
+      <span style="font-size: 22px;">A Freelancer</span>
+    </div>
+  </div>
+
+  <p style="margin-top: 40px; font-size: 26px; text-align: center; font-weight: bold;">
+    💡 No matter your background, this course is designed to turn your goals into digital success.
+  </p>
+
+  <!-- Mobile Responsive Classes -->
+  <style>
+    @media screen and (max-width: 768px) {
+      .perfect-for-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px !important;
+      }
+    }
+  </style>
+
+</section>
+<!-- cta -->
+ <section id="empowerCareer" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: 40px 20px;  background: #fff;">
+
+  <!-- Left Heading -->
+  <div style="flex: 1 1 300px;">
+    <h2 style="font-size: 39px; font-weight: bold; line-height: 1.4;">
+      Empower Your Career with<br>
+      Indore Digital Learning today
+    </h2>
+  </div>
+
+  <!-- Right Buttons -->
+  <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 20px; justify-content: center;">
+    <a href="#" style="background-color: #0047ab; color: white; padding: 25px 10px; border-radius: 8px; text-decoration: none; font-weight: 500; transition: 0.3s; font-size: 25px;" class="btn-hover">
+      Talk to our Expert
+    </a>
+    <a href="#" style="background-color: #0047ab; color: white; padding: 25px 10px; border-radius: 8px; text-decoration: none; font-weight: 500; transition: 0.3s; font-size: 25px;" class="btn-hover">
+      Book your Free Demo
+    </a>
+  </div>
+
+  <!-- Hover Animation & Media Query -->
+  <style>
+    .btn-hover:hover {
+      background-color: #012f7b;
+      transform: scale(1.05);
+    }
+
+    @media screen and (max-width: 768px) {
+      #empowerCareer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+    }
+  </style>
+
+</section>
+<!-- trainign work -->
+ <!-- Font Awesome CDN (required for icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+</body>
+</html>
